@@ -1,0 +1,3 @@
+[submodule "gclient_repo_2"]
+	path = gclient_repo_2
+	url = https://github.com/Leaking/gclient_repo_2.git
