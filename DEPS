@@ -3,7 +3,8 @@ hooks = [
     'name': 'landmines',
     'pattern': '.',
     'action': [
-        'mkdir testdepsDir'
+        'mkdir',
+        'test'
     ]
   }
 ]
