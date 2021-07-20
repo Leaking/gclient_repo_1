@@ -10,11 +10,11 @@ hooks = [
     'pattern': '.',
     'action': [
         'git',
-        '--git-dir=Var("project_directory")/.git',
+        '--git-dir='+Var("project_directory")+'/.git',
         'submodule init',
         '&&',
         'git',
-        '--git-dir=Var("project_directory")/.git',
+        '--git-dir='+Var("project_directory")+'/.git',
         'submodule update'
     ]
   }
