@@ -1,10 +1,21 @@
+vars = {
+  # Common settings.
+  "project_directory" : "gclient_repo_1",
+}
+
+
 hooks = [
   {
-    'name': 'landmines',
+    'name': 'submodule',
     'pattern': '.',
     'action': [
-        'mkdir',
-        'test'
+        'git',
+        '--git-dir=Var("project_directory")/.git',
+        'submodule init',
+        '&&',
+        'git',
+        '--git-dir=Var("project_directory")/.git',
+        'submodule update'
     ]
   }
 ]
